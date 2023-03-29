@@ -9,7 +9,7 @@ $(document).ready(function () {
       type: "post",
       data: { lang_onee: lang_one, lang_twoo: lang_two, textt: text },
       success: function (status) {
-        console.log(status);
+        $("#text").val(status);
       },
     });
   });
